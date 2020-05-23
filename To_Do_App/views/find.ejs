@@ -1,0 +1,33 @@
+
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body">
+		<h1 class="text-center mb-3"><i class="fas fa-search"></i>  FIND</h1>
+
+
+
+		<form action="/insert" method="post">
+				
+				<div class="form-group" >
+					<label for="code">ID</label>
+					<select type="text" id="code" name="code" class="form-control"
+					placeholder="Enter ID">
+						<option value="<%= user.email %> 1"> personal</option>
+						<option value="<%= user.email %> 2"> professional</option>
+					</select>
+				</div>
+
+		
+				
+			
+
+				<a class="btn btn-primary btn-block" href = "javascript:;" onclick = "this.href='/get-data/' + document.getElementById('code').value">FIND</a>
+				
+				
+		</form>
+		<form action ="/dashboard/submit" method="post">
+			<button class="btn btn-secondary btn-block">DASHBOARD</button>
+		</form>  
+    </div>
+  </div>
+</div>
